@@ -1,0 +1,31 @@
+body{
+  font-family: $primary-font;
+}
+
+h1, h2, h3, h4, h5, h6{
+  margin: 0 0 10px;
+  font-weight: normal;
+}
+
+ul{
+  @extend %unlist;
+}
+
+a{
+  text-decoration: none;
+}
+
+img{
+  display: block;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+.container{
+  // @include outer-container;
+  width: 1024px;
+  margin: 0 auto;
+}

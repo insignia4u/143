@@ -1,0 +1,22 @@
+footer{
+  background: $black;
+  height: 46px;
+  line-height: 46px;
+  font-size: 11px;
+  color: $grey1;
+
+  a{
+    color: $grey1;
+    text-decoration: underline;
+  }
+
+  .copy{
+    float: left;
+    margin-left: 30px;
+  }
+
+  .by{
+    float: right;
+    margin-right: 30px;
+  }
+}

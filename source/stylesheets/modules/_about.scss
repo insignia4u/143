@@ -1,0 +1,68 @@
+.about{
+  .about-cover{
+    img{
+      width: 100%;
+    }
+  }
+  .about-detail{
+    width: 794px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 42px 25px 0;
+  }
+
+  h1{
+    font-size: 28px;
+    line-height: 37px;
+    margin-bottom: 85px;
+
+    a{
+      color: $black;
+      text-decoration: underline;
+    }
+  }
+}
+
+.team{
+  width: 794px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 33px;
+
+  h2{
+    font-size: 15px;
+    color: $black;
+    margin-bottom: 8px;
+  }
+
+  li{
+    border-top: $grey2 solid 1px;
+    font-size: 15px;
+    color: $grey3;
+    @include outer-container;
+
+    a{
+      color: $grey3;
+      text-decoration: underline;
+    }
+  }
+
+  .team-member{
+    @include span-columns(3);
+
+    padding: 38px 0;
+  }
+
+  .team-info{
+    @include span-columns(9);
+    @include omega();
+
+    padding: 18px 26px;
+    min-height: 207px;
+
+    p{
+      line-height: 25px;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'GarageGothicBlackRegular';
+    src: url('garagegothicblack.eot');
+    src: url('garagegothicblack.eot') format('embedded-opentype'),
+         url('garagegothicblack.woff2') format('woff2'),
+         url('garagegothicblack.woff') format('woff'),
+         url('garagegothicblack.ttf') format('truetype'),
+         url('garagegothicblack.svg#GarageGothicBlackRegular') format('svg');
+}

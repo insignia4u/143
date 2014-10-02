@@ -1,0 +1,44 @@
+.homepage{
+  margin-bottom: -10px;
+
+  article{
+    margin-bottom: 10px;
+    background: $black;
+  }
+
+  img{
+    @include transition(opacity .5s ease-out);
+    width: 100%;.
+    z-index: 1;
+    opacity: .5;
+  }
+
+  a{
+    color: $white;
+    display: block;
+    position: relative;
+
+    &:hover{
+      img{
+        opacity: .8;
+      }
+    }
+  }
+
+  h1{
+    font-family: $giorgio;
+    position: absolute;
+    top: 27px;
+    left: 30px;
+    font-size: 89px;
+    line-height: 66px;
+    width: 300px;
+    z-index: 2;
+
+    span{
+      display: block;
+      font-size: 51px;
+      line-height: 35px;
+    }
+  }
+}
