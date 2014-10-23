@@ -3,15 +3,11 @@
 
   article{
     margin-bottom: 10px;
-    background: $black;
   }
+}
 
-  img{
-    @include transition(opacity .5s ease-out);
-    width: 100%;.
-    z-index: 1;
-    opacity: .5;
-  }
+.opcover{
+  background: $black;
 
   a{
     color: $white;
@@ -20,7 +16,7 @@
 
     &:hover{
       img{
-        opacity: .8;
+        opacity: .9;
       }
     }
   }
@@ -40,5 +36,11 @@
       font-size: 51px;
       line-height: 35px;
     }
+  }
+
+  img{
+    @include transition(opacity .5s ease-out);
+    z-index: 1;
+    opacity: .5;
   }
 }

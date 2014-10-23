@@ -1,5 +1,6 @@
 body{
   font-family: $primary-font;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -15,8 +16,13 @@ a{
   text-decoration: none;
 }
 
+strong{
+  font-weight: normal;
+}
+
 img{
   display: block;
+  width: 100%;
 }
 
 ::selection {
@@ -26,6 +32,87 @@ img{
 
 .container{
   // @include outer-container;
-  width: 1024px;
+  width: 1080px;
   margin: 0 auto;
+}
+
+.social.square{
+  ul{
+    border-left: $grey6 solid 1px;
+    overflow: hidden;
+  }
+
+  li{
+    display: block;
+    float: left;
+    border: $grey6 solid 1px;
+    border-left: none;
+    text-align: center;
+
+    a{
+      @include size(44px 43px);
+      display: block;
+      color: $grey6;
+      line-height: 48px;
+    }
+  }
+}
+
+.fullwidth{
+  margin: 60px 0;
+}
+
+blockquote{
+  p{
+    margin: 40px 0 50px;
+    color: $grey12;
+    text-transform: uppercase;
+  }
+}
+
+.box-list{
+  background: $grey13;
+  width: 190px;
+  float: left;
+  padding: 25px;
+  margin-left: 30px;
+  margin-top: 3px;
+
+  h2{
+    font-size: 18px;
+    color: $grey7;
+    margin-bottom: 12px;
+  }
+
+  li{
+    margin-bottom: 5px;
+  }
+
+  a{
+    color: $grey7;
+    font-size: 15px;
+    text-decoration: underline;
+  }
+}
+
+.sideleft{
+  float: left;
+  margin-left: 30px;
+}
+
+.sideright{
+  float: right;
+  margin-right: 30px;
+}
+
+.img-holder{
+  margin: 60px 0;
+}
+
+.play{
+  position: absolute;
+
+  a{
+    color: $white;
+  }
 }

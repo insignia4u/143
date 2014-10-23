@@ -4,3 +4,35 @@
   padding: 0;
 }
 
+%btn{
+
+  .btn{
+    display: inline-block;
+    background: $red;
+    line-height: 46px;
+    height: 45px;
+    font-size: 12px;
+    padding: 0 20px;
+    color: $white;
+
+    i{
+      font-size: 20px;
+      position: relative;
+      top: 5px;
+      margin-right: 7px;
+    }
+
+    &.btn-small{
+      line-height: 36px;
+      height: 35px;
+      font-size: 12px;
+      padding: 0 13px;
+
+      i{
+        top: 2px;
+        font-size: 15px;
+      }
+    }
+  }
+}
+

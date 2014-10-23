@@ -9,22 +9,12 @@
 }
 
 @font-face {
-  font-family: 'GarageGothicBlackRegular';
-  src: url('../fonts/garage/garagegothicblack.eot');
-  src: url('../fonts/garage/garagegothicblack.eot') format('embedded-opentype'),
-       url('../fonts/garage/garagegothicblack.woff2') format('woff2'),
-       url('../fonts/garage/garagegothicblack.woff') format('woff'),
-       url('../fonts/garage/garagegothicblack.ttf') format('truetype'),
-       url('../fonts/garage/garagegothicblack.svg#GarageGothicBlackRegular') format('svg');
-}
-
-@font-face {
   font-family: 'icomoon';
-  src:url('../fonts/icomoon/icomoon.eot?hw35qe');
-  src:url('../fonts/icomoon/icomoon.eot?#iefixhw35qe') format('embedded-opentype'),
-    url('../fonts/icomoon/icomoon.woff?hw35qe') format('woff'),
-    url('../fonts/icomoon/icomoon.ttf?hw35qe') format('truetype'),
-    url('../fonts/icomoon/icomoon.svg?hw35qe#icomoon') format('svg');
+  src:url('../fonts/icomoon/icomoon.eot?fdsp9a');
+  src:url('../fonts/icomoon/icomoon.eot?#iefixfdsp9a') format('embedded-opentype'),
+    url('../fonts/icomoon/icomoon.woff?fdsp9a') format('woff'),
+    url('../fonts/icomoon/icomoon.ttf?fdsp9a') format('truetype'),
+    url('../fonts/icomoon/icomoon.svg?fdsp9a#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -43,6 +33,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-arrow-left:before {
+  content: "\e605";
+}
+.icon-arrow-right:before {
+  content: "\e606";
+}
 .icon-play:before {
   content: "\e604";
 }

@@ -5,7 +5,8 @@
 @import "bourbon";
 @import "neat";
 
-@import "tools/*";
+@import "tools/settings";
+@import "tools/extends";
 @import "base/*";
 
 @import "partials/*";
