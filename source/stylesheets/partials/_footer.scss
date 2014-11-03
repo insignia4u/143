@@ -1,9 +1,9 @@
 footer{
   background: $black;
-  height: 46px;
-  line-height: 48px;
-  font-size: 11px;
+  height: 51px;
+  line-height: 51px;
   color: $grey1;
+  overflow: hidden;
 
   a{
     color: $grey1;
@@ -12,11 +12,43 @@ footer{
 
   .copy{
     float: left;
-    margin-left: 30px;
+    margin-left: 15px;
+    font-size: $f12;
   }
 
   .by{
+    display: none;
     float: right;
     margin-right: 30px;
+    font-size: $f12;
+  }
+
+  .social{
+    margin-right: 20px;
+    margin-top: 0;
+    float: right;
+
+    li{
+      margin-left: 15px
+    }
+
+    a{
+      text-decoration: none;
+      font-size: $f18;
+    }
+  }
+
+  @include media(768px) {
+    .copy{
+      margin-left: 30px;
+    }
+
+    .by{
+      display: block;
+    }
+
+    .social{
+      display: none;
+    }
   }
 }

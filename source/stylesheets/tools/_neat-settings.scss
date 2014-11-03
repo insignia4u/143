@@ -1,0 +1,15 @@
+@import "neat-helpers";
+
+$large:  new-breakpoint(min-width 1280px 12);
+$medium: new-breakpoint(min-width  1024px 12);
+$small:  new-breakpoint(min-width  768px  6);
+
+// @media (max-width : 300px){
+//   $max-width: px(480);
+// }
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 768px) {
+  $max-width: em(794);
+}

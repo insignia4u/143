@@ -9,6 +9,7 @@ html.no-js
   head
     meta charset="utf-8"
     meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"
+    meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"
 
     title #{current_page.data.title} || 143
 
@@ -16,6 +17,8 @@ html.no-js
 
     /[if lt IE 9]
       script src="javascripts/vendor/html5shim.js"
+
+    script src="javascripts/vendor/modernizr.js"
 
   body class="#{page_classes}"
 

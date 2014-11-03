@@ -1,41 +1,54 @@
-.about{
+.s-about{
   .about-detail{
-    width: 794px;
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
-    padding: 42px 25px 0;
+    padding: 18px 15px 0;
   }
 
   h1{
-    font-size: 28px;
-    line-height: 37px;
-    margin-bottom: 85px;
+    font-size: $f17;
+    line-height: 26px;
+    margin-bottom: 60px;
 
     a{
       color: $black;
       text-decoration: underline;
     }
   }
+
+  @include media ($small) {
+    .about-detail{
+      margin-left: auto;
+      margin-right: auto;
+      padding: 26px 0px 0;
+    }
+
+    h1{
+      margin-bottom: 48px;
+      line-height: 37px;
+      font-size: $f28;
+    }
+  }
+
+  @include media ($medium) {
+    .about-detail{
+      padding: 42px 0 0;
+    }
+
+    h1{
+      margin-bottom: 85px;
+    }
+  }
 }
 
 .team{
-  width: 794px;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 33px;
-
-  h2{
-    font-size: 15px;
-    color: $black;
-    margin-bottom: 8px;
-  }
+  padding: 0 15px;
 
   li{
     border-top: $grey2 solid 1px;
-    font-size: 15px;
     color: $grey3;
-    @include outer-container;
+    padding: 10px 0 25px;
+    overflow: hidden;
 
     a{
       color: $grey3;
@@ -43,21 +56,57 @@
     }
   }
 
-  .team-member{
-    @include span-columns(3);
+  h2{
+    font-size: 15px;
+    font-size: $f14;
+    color: $black;
+    margin-bottom: 10px;
+  }
 
-    padding: 38px 0;
+  .team-member-position{
+    font-size: $f14;
+  }
+
+  .team-member{
+    padding: 20px 0 10px;
   }
 
   .team-info{
-    @include span-columns(9);
-    @include omega();
-
-    padding: 18px 26px;
-    min-height: 207px;
 
     p{
       line-height: 25px;
+      font-size: $f14;
+    }
+  }
+
+  @include media ($small) {
+    padding: 0 20px;;
+
+    h2{
+      font-size: $f15;
+    }
+
+    .team-member-position{
+      font-size: $f15;
+    }
+  }
+
+  @include media ($medium) {
+
+    .team-member{
+      @include span-columns(3);
+      padding: 38px 0;
+    }
+
+    .team-info{
+      @include span-columns(9);
+      @include omega();
+      min-height: 207px;
+      padding: 18px 26px;
+
+      p{
+        font-size: $f15;
+      }
     }
   }
 }

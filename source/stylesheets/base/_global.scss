@@ -1,6 +1,7 @@
 body{
   font-family: $primary-font;
   -webkit-font-smoothing: antialiased;
+  min-width: 320px;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -31,9 +32,23 @@ img{
 }
 
 .container{
-  // @include outer-container;
-  width: 1080px;
+  @include outer-container;
   margin: 0 auto;
+
+  @include media ($medium) {
+    max-width: em(972);
+  }
+}
+
+.social, .navigation{
+  li{
+    @include inline-block;
+
+    a{
+      text-decoration: none;
+      color: $grey5;
+    }
+  }
 }
 
 .social.square{
@@ -50,10 +65,19 @@ img{
     text-align: center;
 
     a{
-      @include size(44px 43px);
+      @include size(56px 43px);
       display: block;
       color: $grey6;
       line-height: 48px;
+    }
+  }
+
+  @include media ($small) {
+    li{
+
+      a{
+        @include size(44px 43px);
+      }
     }
   }
 }
@@ -72,11 +96,8 @@ blockquote{
 
 .box-list{
   background: $grey13;
-  width: 190px;
-  float: left;
-  padding: 25px;
-  margin-left: 30px;
-  margin-top: 3px;
+  padding: 22px 0 25px;
+  text-align: center;
 
   h2{
     font-size: 18px;
@@ -93,16 +114,36 @@ blockquote{
     font-size: 15px;
     text-decoration: underline;
   }
+
+  @include media ($small) {
+    width: 190px;
+    float: right;
+    padding: 25px;
+    margin-left: 5px;
+    margin-top: 3px;
+    text-align: left;
+    margin-right: 20px;
+  }
+
+  @include media ($medium) {
+    float: left;
+    margin-left: 30px;
+  }
 }
 
 .sideleft{
-  float: left;
-  margin-left: 30px;
+
+  @include media ($small) {
+    float: left;
+    margin-left: 30px;
+  }
 }
 
 .sideright{
-  float: right;
-  margin-right: 30px;
+  @include media ($small) {
+    float: right;
+    margin-right: 30px;
+  }
 }
 
 .img-holder{
@@ -110,7 +151,7 @@ blockquote{
 }
 
 .play{
-  position: absolute;
+  // position: absolute;
 
   a{
     color: $white;

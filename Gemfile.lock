@@ -16,10 +16,6 @@ GEM
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.2.19)
-    em-websocket (0.5.1)
-      eventmachine (>= 0.12.9)
-      http_parser.rb (~> 0.6.0)
-    eventmachine (1.0.3)
     execjs (1.4.0)
       multi_json (~> 1.0)
     ffi (1.9.3)
@@ -27,7 +23,6 @@ GEM
     haml (4.0.5)
       tilt
     hike (1.2.3)
-    http_parser.rb (0.6.0)
     i18n (0.6.11)
     json (1.8.1)
     kramdown (1.4.0)
@@ -56,11 +51,6 @@ GEM
       rack-test (~> 0.6.1)
       thor (>= 0.15.2, < 2.0)
       tilt (~> 1.4.1)
-    middleman-livereload (3.1.1)
-      em-websocket (>= 0.2.0)
-      middleman-core (>= 3.0.2)
-      multi_json (~> 1.0)
-      rack-livereload
     middleman-neat (0.0.4)
       bourbon (>= 2.1)
       neat (>= 1.1.0)
@@ -74,8 +64,6 @@ GEM
       bourbon (>= 2.1)
       sass (>= 3.2)
     rack (1.5.2)
-    rack-livereload (0.3.15)
-      rack
     rack-test (0.6.2)
       rack (>= 1.0)
     rb-fsevent (0.9.4)
@@ -110,7 +98,6 @@ PLATFORMS
 DEPENDENCIES
   middleman (~> 3.2.2)
   middleman-bourbon
-  middleman-livereload (~> 3.1.0)
   middleman-neat
   slim
   wdm (~> 0.1.0)

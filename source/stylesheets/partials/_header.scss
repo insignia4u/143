@@ -4,24 +4,43 @@ header{
   .social, .navigation{
     float: right;
     margin-top: 25px;
-
-    li{
-      @include inline-block;
-      margin-left: 20px;
-    }
   }
 
   .navigation{
+    margin-right: 15px;
+
     a{
       color: $grey4;
+      font-size: $f14;
     }
   }
 
   .social{
-    margin-right: 30px;
+    display: none;
+
+    li{
+      margin-left: 15px;
+    }
 
     a{
       color: $grey4;
+    }
+  }
+
+  @include media(768px) {
+    .navigation{
+      margin-right: 0;
+    }
+
+    .social{
+      display: block;
+      margin-right: 15px;
+    }
+  }
+
+  @include media(940px) {
+    .social{
+      margin-right: 30px;
     }
   }
 }
@@ -29,12 +48,16 @@ header{
 .logo{
   float: left;
   padding: 15px 0;
-  margin-left: 30px;
+  margin-left: 15px;
 
   a{
     display: block;
     @include size(104px 35px);
     @include retina-image("../images/logo", 104px 35px);
     text-indent: -99999px;
+  }
+
+  @include media(940px) {
+    margin-left: 30px;
   }
 }
