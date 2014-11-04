@@ -103,7 +103,7 @@
     }
 
     .session-intro{
-      padding: 0 40px 10px;
+      padding: 0 20px 10px;
       clear: both;
     }
 
@@ -145,16 +145,26 @@
       }
 
       .social{
-        left: 30px;
+        left: 20px;
         float: none;
       }
 
       .play{
-        right: 30px;
+        right: 20px;
 
         .btn{
 
         }
+      }
+    }
+
+    @include media ($medium) {
+      .social{
+        left: 5px;
+      }
+
+      .play{
+        right: 5px;
       }
     }
   }
@@ -274,7 +284,7 @@
 
     blockquote{
       text-align: center;
-      margin: 0 15px;
+      margin: 30px 15px;
 
       p{
         font-size: 40px;
@@ -283,16 +293,24 @@
         width: auto;
         color: $grey12;
         padding: 0;
+        margin-top: 10px;
+        margin-bottom: 15px;
       }
 
       &.bqleft{
         line-height: 40px;
         text-align: center;
+      }
+    }
 
-        p{
-          font-size: 40px;
-          line-height: 40px;
-          margin: 0 0 30px;
+    @media screen and (max-width: 320px){
+      blockquote{
+        &:before, &:after{
+          content: "";
+          border-top: $black solid 2px;
+          display: block;
+          width: 30%;
+          margin: 0 auto;
         }
       }
     }
@@ -347,15 +365,19 @@
     @include media ($medium) {
       p{
         &.q{
-          width: 495px;
+          width: 535px;
           margin: 0 auto;
         }
 
         &.a{
-          width: 495px;
           width: 535px;
           margin: 0 auto 22px;
         }
+      }
+
+      .sideleft, .sideright{
+        margin-left: 5px;
+        margin-right: 5px;
       }
 
       blockquote{
@@ -372,6 +394,20 @@
     }
 
     @include media ($large) {
+      p{
+        &.q{
+          width: 640px;
+        }
+
+        &.a{
+          width: 640px;
+        }
+      }
+
+      .sideleft, .sideright{
+        width: 225px;
+      }
+
       blockquote{
         margin: 40px 120px;
       }
@@ -442,8 +478,14 @@
 
   @include media ($medium) {
     .post-foot{
-      width: 495px;
+      width: 550px;
       margin: 0 auto;
+    }
+  }
+
+  @include media ($medium) {
+    .post-foot{
+      width: 640px;
     }
   }
 }

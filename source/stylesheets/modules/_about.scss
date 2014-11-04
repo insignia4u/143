@@ -1,4 +1,9 @@
 .s-about{
+  .container{
+    @include media ($medium) {
+      padding: 0 90px;
+    }
+  }
   .about-detail{
     text-align: center;
     padding: 18px 15px 0;
@@ -19,7 +24,7 @@
     .about-detail{
       margin-left: auto;
       margin-right: auto;
-      padding: 26px 0px 0;
+      padding: 26px 20px 0;
     }
 
     h1{
@@ -41,6 +46,12 @@
 }
 
 .team{
+  .container{
+    @include media ($medium) {
+      padding: 0 90px;
+    }
+  }
+
   margin-bottom: 33px;
   padding: 0 15px;
 
@@ -89,18 +100,24 @@
     .team-member-position{
       font-size: $f15;
     }
+
+    .team-member{
+      float: left;
+    }
+
+    .team-info{
+      margin-left: 32%;
+    }
   }
 
   @include media ($medium) {
 
     .team-member{
-      @include span-columns(3);
+
       padding: 38px 0;
     }
 
     .team-info{
-      @include span-columns(9);
-      @include omega();
       min-height: 207px;
       padding: 18px 26px;
 

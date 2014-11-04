@@ -1,5 +1,7 @@
 .homepage{
-  margin-bottom: -10px;
+  // margin-bottom: -10px;
+  padding-left: 10px;
+  padding-right: 10px;
 
   article{
     margin-bottom: 10px;
@@ -26,15 +28,14 @@
     position: absolute;
     top: 27px;
     left: 30px;
-    font-size: 89px;
-    line-height: 66px;
-    width: 300px;
+    font-size: 37px;
+    line-height: 28px;
     z-index: 2;
 
     span{
       display: block;
-      font-size: 51px;
-      line-height: 35px;
+      font-size: 37px;
+      line-height: 28px;
     }
   }
 
@@ -42,5 +43,15 @@
     @include transition(opacity .5s ease-out);
     z-index: 1;
     opacity: .5;
+  }
+
+  @include media ($small) {
+    h1{
+      top: 27px;
+      left: 30px;
+      font-size: 89px;
+      line-height: 66px;
+      width: 300px;
+    }
   }
 }

@@ -38,6 +38,10 @@ img{
   @include media ($medium) {
     max-width: em(972);
   }
+
+  @include media ($large) {
+    max-width: em(1155);
+  }
 }
 
 .social, .navigation{
@@ -127,7 +131,12 @@ blockquote{
 
   @include media ($medium) {
     float: left;
-    margin-left: 30px;
+    margin-left: 5px;
+  }
+
+  @include media ($large) {
+    width: 230px;
+    margin: 3px 0 0;
   }
 }
 
