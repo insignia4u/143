@@ -1,3 +1,18 @@
+
+header{
+  position: fixed;
+  z-index: 3;
+  background: $white;
+  width: 100%;
+  top: 0;
+}
+
+@include media($medium) {
+  header{
+    position: absolute;
+  }
+}
+
 header{
   height: 65px;
 
