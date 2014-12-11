@@ -9,9 +9,18 @@ footer{
   right: 0;
   overflow: hidden;
 
-  a{
+  a.link{
     color: $grey1;
-    text-decoration: underline;
+    padding-bottom: 5px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: $grey1;
+
+    &:hover {
+      color: #DDD;
+      border-bottom-color: #DDD;
+    }
+
   }
 
   .copy{
