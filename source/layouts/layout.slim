@@ -22,10 +22,11 @@ html.no-js
 
   body class="#{page_classes}"
 
-    == partial "partials/header"
+    .container-page
+      == partial "partials/header"
 
-    == yield
+      == yield
 
-    == partial "partials/footer"
+      == partial "partials/footer"
 
     script src="javascripts/app.js" type="text/javascript"

@@ -5,10 +5,8 @@ header{
   background: $white;
   width: 100%;
   top: 0;
-}
-
-@include media($medium) {
-  header{
+  
+  @include media($medium) {
     position: absolute;
   }
 }
@@ -22,8 +20,6 @@ header{
   }
 
   .navigation{
-    margin-right: 15px;
-
     a{
       color: $grey4;
       font-size: $f14;
@@ -49,21 +45,14 @@ header{
 
     .social{
       display: block;
-      margin-right: 15px;
     }
   }
 
-  @include media($medium) {
-    .social{
-      margin-right: 5px;
-    }
-  }
 }
 
 .logo{
   float: left;
   padding: 15px 0;
-  margin-left: 15px;
 
   a{
     display: block;
@@ -72,7 +61,5 @@ header{
     text-indent: -99999px;
   }
 
-  @include media($medium) {
-    margin-left: 5px;
-  }
+
 }

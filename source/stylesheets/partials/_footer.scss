@@ -3,6 +3,10 @@ footer{
   height: 51px;
   line-height: 51px;
   color: $grey1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   overflow: hidden;
 
   a{
@@ -12,19 +16,16 @@ footer{
 
   .copy{
     float: left;
-    margin-left: 15px;
     font-size: $f12;
   }
 
   .by{
     display: none;
     float: right;
-    margin-right: 30px;
     font-size: $f12;
   }
 
   .social{
-    margin-right: 20px;
     margin-top: 0;
     float: right;
 
@@ -39,10 +40,6 @@ footer{
   }
 
   @include media(768px) {
-    .copy{
-      margin-left: 30px;
-    }
-
     .by{
       display: block;
     }

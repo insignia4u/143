@@ -1,7 +1,4 @@
 .homepage{
-  // margin-bottom: -10px;
-  padding-left: 10px;
-  padding-right: 10px;
 
   article{
     margin-bottom: 10px;
@@ -27,10 +24,21 @@
     font-family: $giorgio;
     position: absolute;
     top: 27px;
-    left: 30px;
+    left: 10px;
     font-size: 37px;
     line-height: 28px;
     z-index: 2;
+
+    @include media ($small) {
+        left: 15px;
+        font-size: 89px;
+        line-height: 66px;
+        width: 300px;
+    }
+
+    @include media($medium) {
+      left: 30px;
+    }
 
     span{
       display: block;
@@ -43,15 +51,5 @@
     @include transition(opacity .5s ease-out);
     z-index: 1;
     opacity: .5;
-  }
-
-  @include media ($small) {
-    h1{
-      top: 27px;
-      left: 30px;
-      font-size: 89px;
-      line-height: 66px;
-      width: 300px;
-    }
   }
 }
