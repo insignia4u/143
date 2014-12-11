@@ -5,7 +5,7 @@ header{
   background: $white;
   width: 100%;
   top: 0;
-  
+
   @include media($medium) {
     position: absolute;
   }
@@ -23,6 +23,17 @@ header{
     a{
       color: $grey4;
       font-size: $f14;
+      padding-bottom: 5px;
+      display: inline-block;
+      line-height: 100%;
+      border-bottom-style: solid;
+      border-bottom-width: 1px;
+      border-bottom-color: transparent;
+
+      &:hover {
+        border-bottom-color: $grey4;
+      }
+
     }
   }
 
@@ -31,6 +42,10 @@ header{
 
     li{
       margin-left: 15px;
+
+      &:hover a{
+        opacity: 0.5;
+      }
     }
 
     a{
