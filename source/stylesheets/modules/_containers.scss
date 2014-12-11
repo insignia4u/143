@@ -1,0 +1,25 @@
+.container-page {
+  position: relative;
+  min-height: 100%;
+  padding: {
+    top: 65px;
+    bottom: 51px; 
+  }
+}//.container-page
+
+.new-container {
+  //max-width: em(1280);
+  //margin:  0 auto;
+  padding: 0 10px;
+  position: relative;
+  @extend %clearfix;
+
+  @include media($small) {
+    padding: 0 15px;
+  }
+
+  @include media($medium) {
+    padding: 0 30px;
+  }
+
+}//.new-container
