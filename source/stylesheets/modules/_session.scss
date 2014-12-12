@@ -191,16 +191,21 @@
       &:last-child{
         border: none;
       }
+
     }
 
     .social{
       li{
         border: none;
         padding: 0 8px;
+
+        &:hover a{
+          opacity: 0.5;
+        }
       }
 
       a{
-        color: $grey5;
+        color: $grey4;
         font-size: 18px;
         position: relative;
         top: 4px;
