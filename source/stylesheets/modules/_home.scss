@@ -21,30 +21,72 @@
   }
 
   h1{
+    font-size: 1em;
+    line-height: 1em;
     font-family: $giorgio;
     position: absolute;
     top: 27px;
     left: 10px;
-    font-size: 37px;
-    line-height: 28px;
     z-index: 2;
+    display: inline-block;
 
     @include media ($small) {
-        left: 15px;
-        font-size: 89px;
-        line-height: 66px;
-        width: 300px;
+      left: 15px;
     }
 
     @include media($medium) {
       left: 30px;
     }
 
-    span{
+    .rank {
       display: block;
-      font-size: 37px;
-      line-height: 28px;
+      font-size: em(37);
+      line-height: 100%;
+
+      @include media ($medium) {
+        font-size: em(55);
+        line-height: 100%;
+      }      
+
     }
+
+    .name {
+      margin-top: -7px;
+      
+      @include media ($medium) {
+        margin-top: -11px;
+      }
+      
+      span{
+        font-size: em(37);
+        display: inline-block;
+        line-height: 100%;
+        vertical-align: top;
+
+        @include media ($small) {
+          display: block;
+          font-size: em(89);
+          line-height: em(66, 89);
+        }
+
+        @include media ($medium) {
+          font-size: em(160);
+          line-height: em(115, 160);
+        }
+
+        &:last-child {
+          margin-left: 3px;
+
+          @include media ($small) {
+            margin-right: 0;
+          }
+
+        }//.name span:last-child
+
+      }//span
+    
+    }//.name 
+
   }
 
   img{
