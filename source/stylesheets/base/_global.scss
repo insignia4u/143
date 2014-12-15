@@ -119,8 +119,15 @@ blockquote{
   a{
     color: $grey7;
     font-size: 15px;
-    text-decoration: underline;
-  }
+    padding-bottom: 5px;
+    display: inline-block;
+    border-bottom: 1px solid $grey7;
+
+    &:hover {
+      opacity: .6;
+    }
+
+  }//a
 
   @include media ($small) {
     width: 190px;
