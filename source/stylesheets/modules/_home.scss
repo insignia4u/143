@@ -25,13 +25,14 @@
     line-height: 1em;
     font-family: $giorgio;
     position: absolute;
-    top: 27px;
-    left: 10px;
+    top: 7px;
+    left: 15px;
     z-index: 2;
     display: inline-block;
 
     @include media ($small) {
       left: 15px;
+      top: 27px;
     }
 
     @include media($medium) {
