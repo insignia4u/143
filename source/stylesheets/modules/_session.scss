@@ -47,6 +47,10 @@
       top: -1px;
       font-size: 19px;
       color: $grey5;
+
+      &:hover {
+        opacity: 0.6;
+      }
     }
 
     @include media ($medium) {
