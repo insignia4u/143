@@ -458,8 +458,15 @@
     a{
       font-size: 15px;
       color: $grey4;
-      text-decoration: underline;
-    }
+      padding-bottom: 5px;
+      display: inline-block;
+      border-bottom: 1px solid $grey4;
+
+      &:hover {
+        opacity: .6;
+      }
+
+    }//a
   }
 
   @include media ($small) {
