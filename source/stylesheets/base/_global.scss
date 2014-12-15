@@ -59,6 +59,7 @@ img{
 }
 
 .social.square{
+
   ul{
     border-left: $grey6 solid 1px;
     overflow: hidden;
@@ -70,6 +71,23 @@ img{
     border: $grey6 solid 1px;
     border-left: none;
     text-align: center;
+
+    &.facebook:hover a {
+      background: #3b5998;
+      
+      i {
+        color: #344f87;
+      }
+
+    }
+
+    &.twitter:hover a {
+      background: #33ccfe;
+
+      i {
+        color: #2db5e1;
+      }
+    }
 
     a{
       @include size(56px 43px);
