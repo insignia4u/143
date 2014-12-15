@@ -5,6 +5,7 @@ header{
   background: $white;
   width: 100%;
   top: 0;
+  box-shadow: 0px 1px 5px 0px rgba(119, 119, 119, 0.5);
 
   @include media($medium) {
     position: absolute;
