@@ -80,13 +80,18 @@
 
     h1{
       font-family: $giorgio;
-      margin-top: 24px;
+      margin-top: 65px;
       margin-bottom: 14px;
 
+      @include media ($small) { 
+        margin-top: 24px;  
+      }
+      
       .rank {
         display: block;
         font-size: 37px;
         line-height: 100%;
+
 
         @include media ($medium) {
           font-size: 55px;
