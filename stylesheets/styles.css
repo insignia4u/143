@@ -38,6 +38,17 @@ ul {
       top: 2px;
       font-size: 15px; }
 
+/* line 39, /home/fabian/projects/143/source/stylesheets/tools/_extends.scss */
+.new-container {
+  *zoom: 1; }
+  /* line 18, /home/fabian/.rvm/gems/ruby-2.1.3/gems/bourbon-3.1.8/app/assets/stylesheets/addons/_clearfix.scss */
+  .new-container:before, .new-container:after {
+    content: " ";
+    display: table; }
+  /* line 23, /home/fabian/.rvm/gems/ruby-2.1.3/gems/bourbon-3.1.8/app/assets/stylesheets/addons/_clearfix.scss */
+  .new-container:after {
+    clear: both; }
+
 @font-face {
   font-family: 'GiorgioSansBold';
   src: url("../fonts/giorgio/giorgiosans-bold.eot");
@@ -92,36 +103,38 @@ ul {
   content: "\e603"; }
 
 /* line 1, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+html, body {
+  height: 100%; }
+
+/* line 5, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
 body {
   font-family: "Helvetica", Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  min-width: 320px;
-  padding-top: 65px; }
+  -webkit-font-smoothing: antialiased; }
 
-/* line 8, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+/* line 10, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 10px;
   font-weight: normal; }
 
-/* line 17, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+/* line 19, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
 a {
   text-decoration: none; }
 
-/* line 21, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+/* line 23, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
 strong {
   font-weight: normal; }
 
-/* line 25, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+/* line 27, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
 img {
   display: block;
   width: 100%; }
 
-/* line 30, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+/* line 32, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
 ::selection {
   background: #b3d4fc;
   text-shadow: none; }
 
-/* line 35, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+/* line 37, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
 .container {
   *zoom: 1;
   max-width: 49.625em;
@@ -136,38 +149,50 @@ img {
   .container:after {
     clear: both; }
   @media screen and (min-width: 1024px) {
-    /* line 35, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+    /* line 37, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
     .container {
       max-width: 60.75em; } }
   @media screen and (min-width: 1280px) {
-    /* line 35, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+    /* line 37, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
     .container {
       max-width: 72.1875em; } }
 
-/* line 49, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+/* line 51, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
 .social li, .navigation li {
   display: inline-block;
   vertical-align: baseline;
   zoom: 1;
   *display: inline;
   *vertical-align: auto; }
-  /* line 52, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+  /* line 54, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
   .social li a, .navigation li a {
     text-decoration: none;
     color: #cccccc; }
 
-/* line 60, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+/* line 63, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
 .social.square ul {
   border-left: #474747 solid 1px;
   overflow: hidden; }
-/* line 65, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+/* line 68, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
 .social.square li {
   display: block;
   float: left;
   border: #474747 solid 1px;
   border-left: none;
   text-align: center; }
-  /* line 72, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+  /* line 75, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+  .social.square li.facebook:hover a {
+    background: #3b5998; }
+    /* line 78, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+    .social.square li.facebook:hover a i {
+      color: #344f87; }
+  /* line 84, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+  .social.square li.twitter:hover a {
+    background: #33ccfe; }
+    /* line 87, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+    .social.square li.twitter:hover a i {
+      color: #2db5e1; }
+  /* line 92, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
   .social.square li a {
     width: 56px;
     height: 43px;
@@ -175,41 +200,46 @@ img {
     color: #474747;
     line-height: 48px; }
 @media screen and (min-width: 768px) {
-  /* line 83, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+  /* line 103, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
   .social.square li a {
     width: 44px;
     height: 43px; } }
 
-/* line 90, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+/* line 110, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
 .fullwidth {
   margin: 60px 0; }
 
-/* line 95, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+/* line 115, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
 blockquote p {
   margin: 40px 0 50px;
   color: #020202;
   text-transform: uppercase; }
 
-/* line 102, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+/* line 122, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
 .box-list {
   background: #ededed;
   padding: 22px 0 25px;
   text-align: center; }
-  /* line 107, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+  /* line 127, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
   .box-list h2 {
     font-size: 18px;
     color: #6b6b6b;
     margin-bottom: 12px; }
-  /* line 113, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+  /* line 133, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
   .box-list li {
     margin-bottom: 5px; }
-  /* line 117, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+  /* line 137, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
   .box-list a {
     color: #6b6b6b;
     font-size: 15px;
-    text-decoration: underline; }
+    padding-bottom: 5px;
+    display: inline-block;
+    border-bottom: 1px solid #6b6b6b; }
+    /* line 144, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+    .box-list a:hover {
+      opacity: .6; }
   @media screen and (min-width: 768px) {
-    /* line 102, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+    /* line 122, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
     .box-list {
       width: 190px;
       float: right;
@@ -219,33 +249,33 @@ blockquote p {
       text-align: left;
       margin-right: 20px; } }
   @media screen and (min-width: 1024px) {
-    /* line 102, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+    /* line 122, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
     .box-list {
       float: left;
       margin-left: 5px; } }
   @media screen and (min-width: 1280px) {
-    /* line 102, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+    /* line 122, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
     .box-list {
       width: 230px;
       margin: 3px 0 0; } }
 
 @media screen and (min-width: 768px) {
-  /* line 144, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+  /* line 171, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
   .sideleft {
     float: left;
     margin-left: 30px; } }
 
 @media screen and (min-width: 768px) {
-  /* line 152, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+  /* line 179, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
   .sideright {
     float: right;
     margin-right: 30px; } }
 
-/* line 159, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+/* line 186, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
 .img-holder {
-  margin: 60px 0; }
+  margin: 21px 0; }
 
-/* line 166, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+/* line 193, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
 .play a {
   color: white; }
 
@@ -255,42 +285,48 @@ footer {
   height: 51px;
   line-height: 51px;
   color: gray;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   overflow: hidden; }
-  /* line 8, /home/fabian/projects/143/source/stylesheets/partials/_footer.scss */
-  footer a {
+  /* line 12, /home/fabian/projects/143/source/stylesheets/partials/_footer.scss */
+  footer a.link {
     color: gray;
-    text-decoration: underline; }
-  /* line 13, /home/fabian/projects/143/source/stylesheets/partials/_footer.scss */
+    padding-bottom: 5px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: gray; }
+    /* line 19, /home/fabian/projects/143/source/stylesheets/partials/_footer.scss */
+    footer a.link:hover {
+      color: #DDD;
+      border-bottom-color: #DDD; }
+  /* line 26, /home/fabian/projects/143/source/stylesheets/partials/_footer.scss */
   footer .copy {
     float: left;
-    margin-left: 15px;
     font-size: 0.75em; }
-  /* line 19, /home/fabian/projects/143/source/stylesheets/partials/_footer.scss */
+  /* line 31, /home/fabian/projects/143/source/stylesheets/partials/_footer.scss */
   footer .by {
     display: none;
     float: right;
-    margin-right: 30px;
     font-size: 0.75em; }
-  /* line 26, /home/fabian/projects/143/source/stylesheets/partials/_footer.scss */
+  /* line 37, /home/fabian/projects/143/source/stylesheets/partials/_footer.scss */
   footer .social {
-    margin-right: 20px;
     margin-top: 0;
     float: right; }
-    /* line 31, /home/fabian/projects/143/source/stylesheets/partials/_footer.scss */
+    /* line 41, /home/fabian/projects/143/source/stylesheets/partials/_footer.scss */
     footer .social li {
       margin-left: 15px; }
-    /* line 35, /home/fabian/projects/143/source/stylesheets/partials/_footer.scss */
+    /* line 45, /home/fabian/projects/143/source/stylesheets/partials/_footer.scss */
     footer .social a {
       text-decoration: none;
-      font-size: 1.125em; }
+      font-size: 1.125em;
+      opacity: 0.5; }
   @media screen and (min-width: 768px) {
-    /* line 42, /home/fabian/projects/143/source/stylesheets/partials/_footer.scss */
-    footer .copy {
-      margin-left: 30px; }
-    /* line 46, /home/fabian/projects/143/source/stylesheets/partials/_footer.scss */
+    /* line 53, /home/fabian/projects/143/source/stylesheets/partials/_footer.scss */
     footer .by {
       display: block; }
-    /* line 50, /home/fabian/projects/143/source/stylesheets/partials/_footer.scss */
+    /* line 57, /home/fabian/projects/143/source/stylesheets/partials/_footer.scss */
     footer .social {
       display: none; } }
 
@@ -300,54 +336,58 @@ header {
   z-index: 3;
   background: white;
   width: 100%;
-  top: 0; }
+  top: 0;
+  box-shadow: 0px 1px 5px 0px rgba(119, 119, 119, 0.5); }
+  @media screen and (min-width: 1024px) {
+    /* line 2, /home/fabian/projects/143/source/stylesheets/partials/_header.scss */
+    header {
+      position: absolute; } }
 
-@media screen and (min-width: 1024px) {
-  /* line 11, /home/fabian/projects/143/source/stylesheets/partials/_header.scss */
-  header {
-    position: absolute; } }
-/* line 16, /home/fabian/projects/143/source/stylesheets/partials/_header.scss */
+/* line 15, /home/fabian/projects/143/source/stylesheets/partials/_header.scss */
 header {
   height: 65px; }
-  /* line 19, /home/fabian/projects/143/source/stylesheets/partials/_header.scss */
+  /* line 18, /home/fabian/projects/143/source/stylesheets/partials/_header.scss */
   header .social, header .navigation {
     float: right;
     margin-top: 25px; }
   /* line 24, /home/fabian/projects/143/source/stylesheets/partials/_header.scss */
-  header .navigation {
-    margin-right: 15px; }
-    /* line 27, /home/fabian/projects/143/source/stylesheets/partials/_header.scss */
-    header .navigation a {
-      color: #999999;
-      font-size: 0.875em; }
-  /* line 33, /home/fabian/projects/143/source/stylesheets/partials/_header.scss */
+  header .navigation a {
+    color: #999999;
+    font-size: 0.875em;
+    padding-bottom: 5px;
+    display: inline-block;
+    line-height: 100%;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: transparent; }
+    /* line 34, /home/fabian/projects/143/source/stylesheets/partials/_header.scss */
+    header .navigation a:hover {
+      border-bottom-color: #999999; }
+  /* line 41, /home/fabian/projects/143/source/stylesheets/partials/_header.scss */
   header .social {
     display: none; }
-    /* line 36, /home/fabian/projects/143/source/stylesheets/partials/_header.scss */
+    /* line 44, /home/fabian/projects/143/source/stylesheets/partials/_header.scss */
     header .social li {
       margin-left: 15px; }
-    /* line 40, /home/fabian/projects/143/source/stylesheets/partials/_header.scss */
+      /* line 47, /home/fabian/projects/143/source/stylesheets/partials/_header.scss */
+      header .social li:hover a {
+        opacity: 0.5; }
+    /* line 52, /home/fabian/projects/143/source/stylesheets/partials/_header.scss */
     header .social a {
       color: #999999; }
   @media screen and (min-width: 768px) {
-    /* line 46, /home/fabian/projects/143/source/stylesheets/partials/_header.scss */
+    /* line 58, /home/fabian/projects/143/source/stylesheets/partials/_header.scss */
     header .navigation {
       margin-right: 0; }
-    /* line 50, /home/fabian/projects/143/source/stylesheets/partials/_header.scss */
+    /* line 62, /home/fabian/projects/143/source/stylesheets/partials/_header.scss */
     header .social {
-      display: block;
-      margin-right: 15px; } }
-  @media screen and (min-width: 1024px) {
-    /* line 57, /home/fabian/projects/143/source/stylesheets/partials/_header.scss */
-    header .social {
-      margin-right: 5px; } }
+      display: block; } }
 
-/* line 63, /home/fabian/projects/143/source/stylesheets/partials/_header.scss */
+/* line 69, /home/fabian/projects/143/source/stylesheets/partials/_header.scss */
 .logo {
   float: left;
-  padding: 15px 0;
-  margin-left: 15px; }
-  /* line 68, /home/fabian/projects/143/source/stylesheets/partials/_header.scss */
+  padding: 15px 0; }
+  /* line 73, /home/fabian/projects/143/source/stylesheets/partials/_header.scss */
   .logo a {
     display: block;
     width: 104px;
@@ -355,14 +395,10 @@ header {
     background-image: url("../images/logo.png");
     text-indent: -99999px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
-      /* line 68, /home/fabian/projects/143/source/stylesheets/partials/_header.scss */
+      /* line 73, /home/fabian/projects/143/source/stylesheets/partials/_header.scss */
       .logo a {
         background-image: url("../images/logo@2x.png");
         background-size: 104px 35px; } }
-  @media screen and (min-width: 1024px) {
-    /* line 63, /home/fabian/projects/143/source/stylesheets/partials/_header.scss */
-    .logo {
-      margin-left: 5px; } }
 
 @media screen and (min-width: 1024px) {
   /* line 2, /home/fabian/projects/143/source/stylesheets/modules/_about.scss */
@@ -390,8 +426,8 @@ header {
   /* line 30, /home/fabian/projects/143/source/stylesheets/modules/_about.scss */
   .s-about h1 {
     margin-bottom: 48px;
-    line-height: 37px;
-    font-size: 1.75em; } }
+    line-height: 1.27778em;
+    font-size: 2.25em; } }
 @media screen and (min-width: 1024px) {
   /* line 38, /home/fabian/projects/143/source/stylesheets/modules/_about.scss */
   .s-about .about-detail {
@@ -453,7 +489,7 @@ header {
   @media screen and (min-width: 1024px) {
     /* line 115, /home/fabian/projects/143/source/stylesheets/modules/_about.scss */
     .team .team-member {
-      padding: 38px 0; }
+      padding: 28px 0; }
     /* line 120, /home/fabian/projects/143/source/stylesheets/modules/_about.scss */
     .team .team-info {
       min-height: 207px;
@@ -462,54 +498,104 @@ header {
       .team .team-info p {
         font-size: 0.9375em; } }
 
-/* line 1, /home/fabian/projects/143/source/stylesheets/modules/_home.scss */
-.homepage {
-  padding-left: 10px;
-  padding-right: 10px; }
-  /* line 6, /home/fabian/projects/143/source/stylesheets/modules/_home.scss */
-  .homepage article {
-    margin-bottom: 10px; }
+/* line 1, /home/fabian/projects/143/source/stylesheets/modules/_containers.scss */
+.container-page {
+  position: relative;
+  min-height: 100%;
+  padding-top: 65px;
+  padding-bottom: 51px; }
 
-/* line 11, /home/fabian/projects/143/source/stylesheets/modules/_home.scss */
+/* line 10, /home/fabian/projects/143/source/stylesheets/modules/_containers.scss */
+.new-container {
+  padding: 0 15px;
+  position: relative; }
+  @media screen and (min-width: 1024px) {
+    /* line 10, /home/fabian/projects/143/source/stylesheets/modules/_containers.scss */
+    .new-container {
+      padding: 0 30px; } }
+
+/* line 3, /home/fabian/projects/143/source/stylesheets/modules/_home.scss */
+.homepage article {
+  margin-bottom: 10px; }
+
+/* line 8, /home/fabian/projects/143/source/stylesheets/modules/_home.scss */
 .opcover {
   background: black; }
-  /* line 14, /home/fabian/projects/143/source/stylesheets/modules/_home.scss */
+  /* line 11, /home/fabian/projects/143/source/stylesheets/modules/_home.scss */
   .opcover a {
     color: white;
     display: block;
     position: relative; }
-    /* line 20, /home/fabian/projects/143/source/stylesheets/modules/_home.scss */
+    /* line 17, /home/fabian/projects/143/source/stylesheets/modules/_home.scss */
     .opcover a:hover img {
       opacity: .9; }
-  /* line 26, /home/fabian/projects/143/source/stylesheets/modules/_home.scss */
+  /* line 23, /home/fabian/projects/143/source/stylesheets/modules/_home.scss */
   .opcover h1 {
+    font-size: 1em;
+    line-height: 1em;
     font-family: "GiorgioSansBold", sans-serif;
     position: absolute;
-    top: 27px;
-    left: 30px;
-    font-size: 37px;
-    line-height: 28px;
-    z-index: 2; }
-    /* line 35, /home/fabian/projects/143/source/stylesheets/modules/_home.scss */
-    .opcover h1 span {
+    top: 7px;
+    left: 15px;
+    z-index: 2;
+    display: inline-block; }
+    @media screen and (min-width: 768px) {
+      /* line 23, /home/fabian/projects/143/source/stylesheets/modules/_home.scss */
+      .opcover h1 {
+        left: 15px;
+        top: 27px; } }
+    @media screen and (min-width: 1024px) {
+      /* line 23, /home/fabian/projects/143/source/stylesheets/modules/_home.scss */
+      .opcover h1 {
+        left: 30px; } }
+    /* line 42, /home/fabian/projects/143/source/stylesheets/modules/_home.scss */
+    .opcover h1 .rank {
       display: block;
-      font-size: 37px;
-      line-height: 28px; }
-  /* line 42, /home/fabian/projects/143/source/stylesheets/modules/_home.scss */
+      font-size: 2.3125em;
+      line-height: 100%; }
+      @media screen and (min-width: 1024px) {
+        /* line 42, /home/fabian/projects/143/source/stylesheets/modules/_home.scss */
+        .opcover h1 .rank {
+          font-size: 3.4375em;
+          line-height: 100%; } }
+    /* line 54, /home/fabian/projects/143/source/stylesheets/modules/_home.scss */
+    .opcover h1 .name {
+      margin-top: -7px; }
+      @media screen and (min-width: 1024px) {
+        /* line 54, /home/fabian/projects/143/source/stylesheets/modules/_home.scss */
+        .opcover h1 .name {
+          margin-top: -11px; } }
+      /* line 61, /home/fabian/projects/143/source/stylesheets/modules/_home.scss */
+      .opcover h1 .name span {
+        font-size: 2.3125em;
+        display: inline-block;
+        line-height: 100%;
+        vertical-align: top; }
+        @media screen and (min-width: 768px) {
+          /* line 61, /home/fabian/projects/143/source/stylesheets/modules/_home.scss */
+          .opcover h1 .name span {
+            display: block;
+            font-size: 5.5625em;
+            line-height: 0.74157em; } }
+        @media screen and (min-width: 1024px) {
+          /* line 61, /home/fabian/projects/143/source/stylesheets/modules/_home.scss */
+          .opcover h1 .name span {
+            font-size: 10em;
+            line-height: 0.71875em; } }
+        /* line 78, /home/fabian/projects/143/source/stylesheets/modules/_home.scss */
+        .opcover h1 .name span:last-child {
+          margin-left: 3px; }
+          @media screen and (min-width: 768px) {
+            /* line 78, /home/fabian/projects/143/source/stylesheets/modules/_home.scss */
+            .opcover h1 .name span:last-child {
+              margin-right: 0; } }
+  /* line 93, /home/fabian/projects/143/source/stylesheets/modules/_home.scss */
   .opcover img {
     -webkit-transition: opacity 0.5s ease-out;
     -moz-transition: opacity 0.5s ease-out;
     transition: opacity 0.5s ease-out;
     z-index: 1;
     opacity: .5; }
-  @media screen and (min-width: 768px) {
-    /* line 49, /home/fabian/projects/143/source/stylesheets/modules/_home.scss */
-    .opcover h1 {
-      top: 27px;
-      left: 30px;
-      font-size: 89px;
-      line-height: 66px;
-      width: 300px; } }
 
 /* line 2, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
 .session #session-header {
@@ -555,101 +641,180 @@ header {
     top: -1px;
     font-size: 19px;
     color: #cccccc; }
+    /* line 51, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    .session #session-header .previous:hover,
+    .session #session-header .next:hover {
+      opacity: 0.6; }
   @media screen and (min-width: 1024px) {
     /* line 2, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .session #session-header {
       display: block; } }
-/* line 58, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+/* line 62, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
 .session .session-cover .img-holder {
   margin: 0; }
-/* line 63, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+/* line 67, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
 .session .session-head {
   background: black;
   color: white;
   text-align: center; }
-  /* line 68, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+  /* line 72, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
   .session .session-head .container {
     position: relative; }
-  /* line 73, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+  /* line 77, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+  .session .session-head .inner-container {
+    padding-left: 113px; }
+    /* line 80, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    .session .session-head .inner-container .social {
+      position: absolute;
+      left: 0;
+      top: 0; }
+      @media screen and (min-width: 768px) {
+        /* line 80, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+        .session .session-head .inner-container .social {
+          left: 20px;
+          top: 45px; } }
+      @media screen and (min-width: 1024px) {
+        /* line 80, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+        .session .session-head .inner-container .social {
+          left: 5px; } }
+      /* line 94, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+      .session .session-head .inner-container .social ul {
+        border-left: 0; }
+        @media screen and (min-width: 768px) {
+          /* line 94, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+          .session .session-head .inner-container .social ul {
+            border-left: 1px solid #474747; } }
+        /* line 101, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+        .session .session-head .inner-container .social ul li:last-child {
+          border-right: 0; }
+          @media screen and (min-width: 768px) {
+            /* line 101, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+            .session .session-head .inner-container .social ul li:last-child {
+              border-right: 1px solid #474747; } }
+    /* line 113, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    .session .session-head .inner-container .play {
+      float: none;
+      text-align: center; }
+      /* line 117, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+      .session .session-head .inner-container .play .btn {
+        display: block;
+        width: auto; }
+  /* line 126, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
   .session .session-head a {
     color: white; }
-  /* line 77, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+  /* line 130, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
   .session .session-head h1 {
     font-family: "GiorgioSansBold", sans-serif;
-    font-size: 71px;
-    line-height: 66px;
-    float: left;
-    width: 100%;
-    margin-top: 24px;
+    margin-top: 65px;
     margin-bottom: 14px; }
-    /* line 86, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
-    .session .session-head h1 span {
+    @media screen and (min-width: 768px) {
+      /* line 130, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+      .session .session-head h1 {
+        margin-top: 24px; } }
+    /* line 139, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    .session .session-head h1 .rank {
       display: block;
-      font-size: 42px;
-      line-height: 24px; }
-  /* line 93, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+      font-size: 37px;
+      line-height: 100%; }
+      @media screen and (min-width: 1024px) {
+        /* line 139, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+        .session .session-head h1 .rank {
+          font-size: 55px;
+          line-height: 100%; } }
+    /* line 152, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    .session .session-head h1 .name {
+      margin-top: -7px; }
+      @media screen and (min-width: 1024px) {
+        /* line 152, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+        .session .session-head h1 .name {
+          margin-top: -11px; } }
+      /* line 159, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+      .session .session-head h1 .name span {
+        display: inline-block;
+        line-height: 100%;
+        vertical-align: top;
+        display: block;
+        font-size: 89px;
+        line-height: 66px; }
+        @media screen and (min-width: 1024px) {
+          /* line 159, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+          .session .session-head h1 .name span {
+            font-size: 160px;
+            line-height: 115px; } }
+  /* line 178, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
   .session .session-head p {
     font-size: 16px;
     line-height: 23px; }
-  /* line 101, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    @media screen and (min-width: 1024px) {
+      /* line 178, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+      .session .session-head p {
+        font-size: 30px !important;
+        line-height: 42px !important;
+        margin-top: 50px;
+        display: block; } }
+  /* line 193, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
   .session .session-head .social {
     float: left; }
-  /* line 105, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+  /* line 197, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
   .session .session-head .session-intro {
     padding: 0 20px 10px;
     clear: both; }
-  /* line 110, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    @media screen and (min-width: 768px) {
+      /* line 197, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+      .session .session-head .session-intro {
+        padding: 0 50px 10px; } }
+  /* line 206, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
   .session .session-head .play {
     text-align: left;
     float: right; }
   @media screen and (max-width: 320px) {
-    /* line 118, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    /* line 214, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .session .session-head .play .btn {
       width: 205px; } }
   @media screen and (min-width: 768px) {
-    /* line 63, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    /* line 67, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .session .session-head {
       min-height: 324px; }
-      /* line 127, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+      /* line 223, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
       .session .session-head h1 {
         font-size: 89px;
         margin-bottom: 30px; }
-        /* line 131, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+        /* line 227, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
         .session .session-head h1 span {
           font-size: 51px;
           line-height: 35px; }
-      /* line 137, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+      /* line 233, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
       .session .session-head p {
         font-size: 21px;
         line-height: 30px; }
-      /* line 142, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+      /* line 238, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
       .session .session-head .social, .session .session-head .play {
         position: absolute;
         top: 45px; }
-      /* line 147, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+      /* line 243, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
       .session .session-head .social {
         left: 20px;
         float: none; }
-      /* line 152, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+      /* line 248, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
       .session .session-head .play {
         right: 20px; } }
   @media screen and (min-width: 1024px) {
-    /* line 162, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    /* line 258, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .session .session-head .social {
       left: 5px; }
-    /* line 166, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    /* line 262, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .session .session-head .play {
       right: 5px; } }
-/* line 172, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+/* line 268, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
 .session .session-info {
   padding: 15px 0 12px;
   text-align: center;
   border-bottom: #e0e0e0 solid 1px;
   min-height: 60px; }
-  /* line 178, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+  /* line 274, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
   .session .session-info ul {
     font-size: 0; }
-  /* line 182, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+  /* line 278, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
   .session .session-info li {
     display: inline-block;
     line-height: 23px;
@@ -658,83 +823,86 @@ header {
     padding: 0 14px;
     border-right: #cccccc solid 1px;
     vertical-align: middle; }
-    /* line 191, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    /* line 287, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .session .session-info li:last-child {
       border: none; }
-  /* line 197, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+  /* line 294, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
   .session .session-info .social li {
     border: none;
     padding: 0 8px; }
-  /* line 202, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    /* line 298, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    .session .session-info .social li:hover a {
+      opacity: 0.5; }
+  /* line 303, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
   .session .session-info .social a {
-    color: #cccccc;
+    color: #999999;
     font-size: 18px;
     position: relative;
     top: 4px; }
-    /* line 208, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    /* line 309, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .session .session-info .social a.fb {
       top: 2px; }
-    /* line 212, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    /* line 313, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .session .session-info .social a.sc {
       font-size: 27px; }
   @media screen and (max-width: 320px) {
-    /* line 220, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    /* line 321, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .session .session-info li:first-child {
       border: none; } }
   @media screen and (min-width: 768px) {
-    /* line 172, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    /* line 268, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .session .session-info {
       margin-bottom: 40px;
       padding: 12px 0; }
-      /* line 230, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+      /* line 331, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
       .session .session-info ul {
         height: 31px; }
-      /* line 233, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+      /* line 334, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
       .session .session-info li {
         font-size: 15px;
         border-right: #cccccc solid 1px;
         line-height: 31px; } }
   @media screen and (min-width: 1024px) {
-    /* line 172, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    /* line 268, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .session .session-info {
       margin-bottom: 53px; } }
 
-/* line 247, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+/* line 348, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
 .post article {
   padding-top: 20px; }
-  /* line 250, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+  /* line 351, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
   .post article p {
     color: #6b6b6b;
     font-size: 14px;
     line-height: 21px;
     padding: 0 20px; }
-    /* line 256, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    /* line 357, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .post article p.q {
       color: #111111;
       margin: 0 auto; }
-    /* line 261, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    /* line 362, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .post article p.a {
       margin: 0 0 21px; }
-  /* line 266, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+  /* line 367, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
   .post article .sideleft, .post article .sideright {
     margin: 0 20px; }
-    /* line 269, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    /* line 370, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .post article .sideleft img, .post article .sideright img {
       margin-bottom: 20px; }
-    /* line 273, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    /* line 374, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .post article .sideleft .caption, .post article .sideright .caption {
       margin-bottom: 33px; }
-      /* line 276, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+      /* line 377, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
       .post article .sideleft .caption h3, .post article .sideleft .caption p, .post article .sideright .caption h3, .post article .sideright .caption p {
         font-size: 13px;
         color: #999999;
         margin: 0;
         padding: 0; }
-  /* line 285, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+  /* line 386, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
   .post article blockquote {
     text-align: center;
     margin: 30px 15px; }
-    /* line 289, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    /* line 390, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .post article blockquote p {
       font-size: 40px;
       font-family: "GiorgioSansBold", sans-serif;
@@ -744,12 +912,12 @@ header {
       padding: 0;
       margin-top: 10px;
       margin-bottom: 15px; }
-    /* line 300, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    /* line 401, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .post article blockquote.bqleft {
       line-height: 40px;
       text-align: center; }
   @media screen and (max-width: 320px) {
-    /* line 308, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    /* line 409, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .post article blockquote:before, .post article blockquote:after {
       content: "";
       border-top: black solid 2px;
@@ -757,61 +925,62 @@ header {
       width: 30%;
       margin: 0 auto; } }
   @media screen and (min-width: 768px) {
-    /* line 247, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    /* line 348, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .post article {
       padding-top: 0; }
-      /* line 321, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+      /* line 422, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
       .post article p {
-        font-size: 15px;
-        line-height: 22px; }
-        /* line 325, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+        font-size: 16px;
+        line-height: 1.4375em; }
+        /* line 426, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
         .post article p.q {
           color: #111111;
           margin: 0;
           width: 71%; }
-        /* line 331, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+        /* line 432, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
         .post article p.a {
           margin: 0 0 22px;
           width: 71%; }
-      /* line 337, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+      /* line 438, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
       .post article .sideleft, .post article .sideright {
         width: 190px;
         margin-top: 5px; }
-      /* line 342, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+      /* line 443, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
       .post article blockquote {
         margin: 50px 25px; }
-        /* line 345, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+        /* line 446, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
         .post article blockquote p {
           font-size: 80px;
           line-height: 65px;
           margin: 40px 0 50px; }
-        /* line 351, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+        /* line 452, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
         .post article blockquote.bqleft {
           float: right;
           width: 190px;
           text-align: left;
           margin: 0 20px; }
-          /* line 357, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+          /* line 458, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
           .post article blockquote.bqleft p {
             font-size: 34px;
-            line-height: 31px; } }
+            line-height: 1.05882em;
+            margin-top: 0; } }
   @media screen and (min-width: 1024px) {
-    /* line 367, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    /* line 469, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .post article p.q {
       width: 535px;
       margin: 0 auto; }
-    /* line 372, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    /* line 474, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .post article p.a {
       width: 535px;
       margin: 0 auto 22px; }
-    /* line 378, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    /* line 480, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .post article .sideleft, .post article .sideright {
       margin-left: 5px;
       margin-right: 5px; }
-    /* line 383, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    /* line 485, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .post article blockquote {
       margin: 40px 70px; }
-      /* line 386, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+      /* line 488, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
       .post article blockquote.bqleft {
         float: left;
         width: 340px;
@@ -819,107 +988,112 @@ header {
         line-height: 40px;
         margin: 0 30px; } }
   @media screen and (min-width: 1280px) {
-    /* line 398, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    /* line 500, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .post article p.q {
       width: 640px; }
-    /* line 402, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    /* line 504, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .post article p.a {
       width: 640px; }
-    /* line 407, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    /* line 509, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .post article .sideleft, .post article .sideright {
       width: 225px; }
-    /* line 411, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    /* line 513, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .post article blockquote {
       margin: 40px 120px; } }
-/* line 417, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+/* line 519, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
 .post .post-foot {
   padding: 0 20px; }
-  /* line 420, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+  /* line 522, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
   .post .post-foot .social.square {
     margin: 37px 0 63px; }
-    /* line 423, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    /* line 525, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .post .post-foot .social.square ul, .post .post-foot .social.square li {
       border-color: #e2e2e2; }
-    /* line 427, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    /* line 529, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .post .post-foot .social.square a {
       color: #e2e2e2; }
-/* line 433, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+/* line 535, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
 .post .reference {
   border-top: #cccccc solid 1px;
   color: #9d9e9e;
   padding: 25px 0 48px; }
-  /* line 438, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+  /* line 540, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
   .post .reference h2 {
     font-size: 18px;
     margin-bottom: 20px; }
-  /* line 443, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+  /* line 545, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
   .post .reference ul {
     font-size: 0; }
-  /* line 447, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+  /* line 549, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
   .post .reference li {
     margin-bottom: 5px;
     font-size: 15px; }
-  /* line 452, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+  /* line 554, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
   .post .reference a {
     font-size: 15px;
     color: #999999;
-    text-decoration: underline; }
+    padding-bottom: 5px;
+    display: inline-block;
+    border-bottom: 1px solid #999999; }
+    /* line 561, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    .post .reference a:hover {
+      opacity: .6; }
 @media screen and (min-width: 768px) {
-  /* line 460, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+  /* line 569, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
   .post .post-foot {
     width: 71%;
     margin: 0; }
-    /* line 464, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    /* line 573, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .post .post-foot .social.square {
       margin: 45px 0 90px; }
-  /* line 469, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+  /* line 578, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
   .post .reference {
     padding: 25px 0 70px; }
-    /* line 472, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    /* line 581, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .post .reference li {
       width: 50%;
       display: inline-block; } }
 @media screen and (min-width: 1024px) {
-  /* line 480, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+  /* line 589, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
   .post .post-foot {
     width: 550px;
     margin: 0 auto; } }
 @media screen and (min-width: 1024px) {
-  /* line 487, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+  /* line 596, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
   .post .post-foot {
     width: 640px; } }
 
-/* line 494, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+/* line 603, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
 .related ul {
   overflow: hidden; }
-/* line 502, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+/* line 611, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
 .related a h1 {
   width: 120px;
   top: 12px;
   left: 15px; }
-/* line 508, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+/* line 617, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
 .related a h1, .related a span {
   font-size: 37px;
   line-height: 28px; }
 @media screen and (min-width: 768px) {
-  /* line 515, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+  /* line 624, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
   .related li {
     width: 50%;
     float: left; }
-  /* line 521, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+  /* line 630, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
   .related a h1 {
     width: 145px;
     top: 20px;
     left: 25px; }
-  /* line 527, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+  /* line 636, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
   .related a h1, .related a span {
     font-size: 44px;
     line-height: 33px; } }
 @media screen and (min-width: 1024px) {
-  /* line 536, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+  /* line 645, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
   .related a h1 {
     width: 200px; }
-  /* line 540, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+  /* line 649, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
   .related a h1, .related a span {
     font-size: 60px;
     line-height: 45px; } }
